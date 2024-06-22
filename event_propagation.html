@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event propagation</title>
+    <style>
+        #div2{
+            height: 400px;
+            width: 300px;
+            background-color: blue;
+        }
+        #div1{
+            height: 200px;
+            width: 200px;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <button class="child">Click</button>
+    </div> -->
+
+    <div id="div2" onclick="task()">div2
+        <div id="div1" onclick="demo(event)">
+            div1
+        </div>
+    </div>
+    <input type="checkbox" id="input">
+    <script src="./event_propagation.js"></script>
+</body>
+</html>
