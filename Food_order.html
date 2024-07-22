@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food order</title>
+    <link rel="stylesheet" href="./Food_order.css">
+</head>
+
+<body>
+    <div id="outer_div">
+        <div>
+            <div>
+                <h1 id="heading">Good food, good mood !</h1>
+            </div>
+            <div id="food_list">
+                <div id="item_1" style="line-height: 2px;">
+                    <img src="./waffle.jpg" alt="" id="foods"><br><br><br><br><br><br>
+                    <button class="add_btn" onclick="adding(event)">Add to cart</button>
+                    <button class="undo_btn" onclick="undo(event)">Undo</button>
+                    <p id="item_count1">Selected items(0)</p>
+                    <p>Waffle</p>
+                    <h4 id="waffle">Waffle with Berries</h4>
+                    <p>$6.50</p>
+                </div>
+                <div id="item_2" style="line-height: 2px;">
+                    <img src="./creme.jpg" alt="" id="foods"><br><br><br><br><br><br>
+                    <button class="add_btn" onclick="adding(event)">Add to cart</button>
+                    <button class="undo_btn" onclick="undo(event)">Undo</button>
+                    <p id="item_count2">Selected items(0)</p>
+                    <p>Creme Brulee</p>
+                    <h4 id="vanilla">Vanilla Bean Creme Brulee</h4>
+                    <p>$7.00</p>
+                </div>
+                <div id="item_3" style="line-height: 2px;">
+                    <img src="./macaron.jpg" alt="" id="foods"><br><br><br><br><br><br>
+                    <button class="add_btn" onclick="adding(event)">Add to cart</button>
+                    <button class="undo_btn" onclick="undo(event)">Undo</button>
+                    <p id="item_count3">Selected items(0)</p>
+                    <p>Macaron</p>
+                    <h4 id="macaron">Macaron Mix of Five</h4>
+                    <p>$8.00</p>
+                </div>
+                <div id="item_4" style="line-height: 2px;">
+                    <img src="./tiramisu.jpg" alt="" id="foods"><br><br><br><br><br><br>
+                    <button class="add_btn" onclick="adding(event)">Add to cart</button>
+                    <button class="undo_btn" onclick="undo(event)">Undo</button>
+                    <p id="item_count4">Selected items(0)</p>
+                    <p>Tiramisu</p>
+                    <h4 id="tiramisu">Classic Tiramisu</h4>
+                    <p>$5.50</p>
+                </div>
+                <div id="item_5" style="line-height: 2px;">
+                    <img src="./baklava.jpg" alt="" id="foods"><br><br><br><br><br><br>
+                    <button class="add_btn" onclick="adding(event)">Add to cart</button>
+                    <button class="undo_btn" onclick="undo(event)">Undo</button>
+                    <p id="item_count5">Selected items(0)</p>
+                    <p>Baklava</p>
+                    <h4 id="pistachio">Pistachio Baklava</h4>
+                    <p>$4.00</p>
+                </div>
+                <div id="item_6" style="line-height: 2px;">
+                    <img src="./brownie.jpg" alt="" id="foods"><br><br><br><br><br><br>
+                    <button class="add_btn" onclick="adding(event)">Add to cart</button>
+                    <button class="undo_btn" onclick="undo(event)">Undo</button>
+                    <p id="item_count6">Selected items(0)</p>
+                    <p>Pie</p>
+                    <h4 id="pie">Lemon Meringue Pie</h4>
+                    <p>$5.00</p>
+                </div>
+            </div>
+        </div>
+        <div id="amount_box">
+            <h4>Your Chart</h4><hr>
+            <h4 id="total_items">Total items (0)</h4>
+            <div id="ordered_items">
+                <h4>Order Total</h4>
+                <h4 id="Total_sum">$ 0.0</h4>
+            </div>
+            <button id="confirm_btn" onclick="msg()">Confirm Order</button>
+            <!-- <h4>Items Selected</h4> -->
+        </div>
+        <div id="alert_box">
+            <h4>Your order have been confirmed</h4>
+            <button id="ok_btn" onclick="ok()">Okay</button>
+        </div>
+        <div id="no_items_alert_box">
+            <h4>No Items Selected</h4>
+            <button id="ok_btn" onclick="ok()">Close</button> 
+        </div>
+        
+    </div>
+    <script src="./Food_order.js"></script>
+</body>
+
+</html>
